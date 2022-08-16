@@ -3,14 +3,11 @@ import { ScatterplotLayer } from '@deck.gl/layers';
 import { TextLayer } from '@deck.gl/layers';
 
 function getTextSize(d) {
-    const { cluster, point_count } = d.properties ?? {};
-    if (!cluster) return 0;
-    const m = Math.ceil(Math.log10(point_count));
-    return 20 * Math.sqrt(m);
+    return d.properties?.fontSize ?? 20;
 }
 
 function getCircleRadius(d) {
-    return 0.8 * getTextSize(d);
+    return d?.properties?.radius ?? 32;
 }
 
 export default class NodeLayer extends CompositeLayer {
@@ -65,6 +62,7 @@ export default class NodeLayer extends CompositeLayer {
 
 NodeLayer.defaultProps = {
     id: 'nodelayer',
+    data: [],
 
     getText: d => d.properties.label,
     getTextSize,
