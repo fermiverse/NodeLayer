@@ -6,7 +6,7 @@
   "author": "fermi <fermiverse@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@deck.gl/core": "^8.8.8",
-    "@deck.gl/layers": "^8.8.8"
+    "@deck.gl/core": "8.7.11",
+    "@deck.gl/layers": "8.7.11"
   }
 }
