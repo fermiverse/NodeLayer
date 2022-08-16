@@ -1,0 +1,12 @@
+{
+  "name": "nodelayer",
+  "version": "1.0.0",
+  "description": "deck.gl layer composed of a ScatterPlotLayer and TextLayer",
+  "main": "index.js",
+  "author": "fermi <fermiverse@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@deck.gl/core": "^8.8.8",
+    "@deck.gl/layers": "^8.8.8"
+  }
+}
